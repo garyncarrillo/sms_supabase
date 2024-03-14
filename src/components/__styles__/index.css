@@ -1,0 +1,120 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    font-family: 'acumin variable concept';
+}
+
+.labels label {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+}
+
+
+.labels label input {
+    flex-grow: 1;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.otp-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+}
+
+.otp-buttons button {
+    width: 50%;
+    height: 30px;
+    background-color: rgb(5, 13, 98);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'acumin variable concept';
+    font-weight: 600;
+}
+
+
+@media (max-width: 642px) {
+    .labels {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .labels svg {
+        display: none;
+    }
+    
+    .labels label {
+        gap: 5px;
+        width: 100%;
+    }
+
+    .labels label input {
+        flex-grow: 1;
+    }
+
+    .otp-buttons {
+        width: 100%;
+        height: 40px;
+    }
+    
+    .otp-buttons button {
+        width: 50%;
+        height: 30px;
+    }
+}
+
+@media (max-width: 912px) {
+    .labels {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .labels svg {
+        display: none;
+    }
+    
+    
+    .labels label {
+        gap: 5px;
+        width: 100%;
+    }
+
+    .labels label input {
+        flex-grow: 1;
+    }
+
+    .otp-buttons {
+        width: 100%;
+        height: 40px;
+    }
+    
+    .otp-buttons button {
+        width: 50%;
+        height: 30px;
+    }
+}
